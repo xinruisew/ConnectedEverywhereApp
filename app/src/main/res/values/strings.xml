@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecureApp</string>
+    <string name="wrongpassword">Password must be at least 6 characters</string>
+    <string name="passwordisnotcorrect">Password does not match</string>
+    <string name="pwNotValid">Password is too weak</string>
+    <string name="notValidPW">Password is weak</string>
+</resources>

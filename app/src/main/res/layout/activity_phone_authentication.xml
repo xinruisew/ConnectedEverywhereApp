@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneAuthentication">
+
+    <TextView
+        android:id="@+id/slogan_PhoneAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/acme"
+        android:text="Phone OTP Verification"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/slogan_OTPdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_PhoneAuth"
+        android:textAlignment="center"
+        android:text="Enter phone number and OTP to verify acccount."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/antic"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/idEditPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_OTPdesc"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:hint="Phone number (+60)"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/idBtnGetOtp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Request OTP"
+        android:layout_below="@+id/idEditPhoneNumber"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/idEditOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBtnGetOtp"
+        android:hint="OTP code"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/idBtnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Verify"
+        android:layout_below="@+id/idEditOtp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_backLoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBtnVerify"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00000000"
+        android:text="Cancel"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="157dp"
+        app:srcCompat="@drawable/ic_baseline_phone_android_24" />
+
+</RelativeLayout>
