@@ -5,8 +5,8 @@ This implementation only focuses on the system security features instead of impl
 
 Prepared by:
 Sew Xin Rui,
-Soh Sin Min,
-Ng Zhi Jin
+Ng Zhi Jin,
+Soh Sin Min
 
 For course CST235/CSM331/CST231:
 Principles of Computer Networks and Information Security
